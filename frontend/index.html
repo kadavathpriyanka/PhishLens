@@ -17,6 +17,12 @@
       <h1>PhishLens</h1>
     </header>
     <p class="subtitle">Paste a suspicious email and get an instant risk analysis</p>
+    <div class="examples-bar">
+  <span class="examples-label">Try an example:</span>
+  <button class="example-btn" data-example="microsoft">Microsoft Phish</button>
+  <button class="example-btn" data-example="bank">Bank Phish</button>
+  <button class="example-btn" data-example="clean">Legit Email</button>
+</div>
 
     <div id="inputWrapper" class="input-wrapper">
       <textarea id="emailInput" rows="10" placeholder="Paste a suspicious email here..."></textarea>
@@ -40,6 +46,7 @@
           <div id="scoreCircle" class="score-circle">
             <span id="scoreNumber">0</span>
           </div>
+          <button id="resetBtn" class="reset-btn hidden">Clear & Scan Again</button>
         </div>
         <div id="verdictLabel" class="verdict"></div>
       </div>

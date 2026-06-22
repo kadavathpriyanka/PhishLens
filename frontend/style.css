@@ -208,3 +208,61 @@ button:focus-visible { outline: 2px solid var(--brass); outline-offset: 3px; }
 @media (prefers-reduced-motion: reduce) {
   .scan-line, #resultCard, .score-circle.dangerous { animation: none !important; }
 }
+.lens-icon { color: var(--brass); flex-shrink: 0; width: 36px; height: 36px; }
+.examples-bar {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex-wrap: wrap;
+  margin-bottom: 20px;
+}
+
+.examples-label {
+  font-size: 0.8rem;
+  color: var(--text-faint);
+  white-space: nowrap;
+}
+
+.example-btn {
+  margin: 0;
+  background: transparent;
+  color: var(--brass);
+  border: 1px solid var(--brass);
+  padding: 5px 13px;
+  border-radius: 20px;
+  font-size: 0.8rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background 0.15s, color 0.15s;
+  box-shadow: none;
+}
+
+.example-btn:hover {
+  background: var(--brass);
+  color: var(--ink);
+  transform: none;
+  box-shadow: none;
+}
+
+.reset-btn {
+  margin-top: 16px;
+  background: transparent;
+  color: var(--text-faint);
+  border: 1px solid var(--panel-border);
+  padding: 9px 20px;
+  border-radius: 8px;
+  font-size: 0.9rem;
+  font-weight: 500;
+  cursor: pointer;
+  display: block;
+  width: 100%;
+  transition: border-color 0.15s, color 0.15s;
+  box-shadow: none;
+}
+
+.reset-btn:hover {
+  border-color: var(--text-faint);
+  color: var(--text-primary);
+  transform: none;
+  box-shadow: none;
+}
