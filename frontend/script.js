@@ -44,7 +44,7 @@ analyzeBtn.addEventListener('click', async () => {
   inputWrapper.classList.add('scanning');
 
   try {
-    const response = await fetch('http://localhost:5000/analyze', {
+    const response = await fetch('https://phishlens-backend-i9r6.onrender.com/analyze', {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify({ emailText })
